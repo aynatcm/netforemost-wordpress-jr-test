@@ -20,12 +20,12 @@ get_header();
                 <div class="article__wrapper">
 
                     <header class="article__wrapper-header">
-                        <?php if(!empty($title)):?>
+                        <?php if($title):?>
                             <h1 class="article__wrapper-header-title"><?php echo $title?></h1>
                         <?php endif?>
                     </header><!-- .entry-header -->
 
-                    <?php if(!empty($content)):?>
+                    <?php if($content):?>
                         <div class="article__wrapper-content">
                             <?php echo $content?>
                         </div>
