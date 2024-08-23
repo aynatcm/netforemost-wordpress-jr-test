@@ -21,17 +21,17 @@ $site_logo = get_theme_mod('custom_logo');
 
                 <a href="#">
                     <img class="footer__wrapper-left-socials-media"
-                        src="<?php echo get_template_directory_uri() . './assets/images/facebook.png' ?>"
+                        src="<?php echo get_template_directory_uri() . '/assets/images/facebook.png' ?>"
                         alt="Facebook logo" />
                 </a>
                 <a href="#">
                     <img class="footer__wrapper-left-socials-media"
-                        src="<?php echo get_template_directory_uri() . './assets/images/twitter.png' ?>"
+                        src="<?php echo get_template_directory_uri() . '/assets/images/twitter.png' ?>"
                         alt="Twitter logo" />
                 </a>
                 <a href="#">
                     <img class="footer__wrapper-left-socials-media"
-                        src="<?php echo get_template_directory_uri() . './assets/images/instagram.png' ?>"
+                        src="<?php echo get_template_directory_uri() . '/assets/images/instagram.png' ?>"
                         alt="Instagram logo" />
                 </a>
 
