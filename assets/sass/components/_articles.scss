@@ -1,0 +1,104 @@
+// Articles
+.features {
+  padding: 90px 40px 0 40px;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &-item {
+      width: 28%;
+      padding: 20px 15px 40px;
+      text-align: center;
+      position: relative;
+      background-color: var(--c-body);
+
+      @media (max-width: $bp-lg) {
+        width: 26%;
+      }
+
+      @media (max-width: $bp-md) {
+        width: 100%;
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: var(--c-turquoise);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        transition: var(--t-md) ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          top: -20px;
+          left: -20px;
+        }
+      }
+
+      &-icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: var(--c-pink);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+        }
+      }
+
+      &-title {
+        font-family: var(--ff-primary);
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--c-black);
+        line-height: 44px;
+        letter-spacing: -0.35px;
+        padding-top: 36px;
+      }
+
+      &-description {
+        padding-top: 28px;
+        font-family: var(--ff-secondary);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--c-black);
+      }
+
+      &-cta {
+        width: fit-content;
+        margin: auto;
+        padding: 10px 28px;
+        background-color: var(--c-blue);
+        color: var(--c-body);
+        font-size: 16px;
+        font-family: var(--ff-primary);
+        line-height: 28px;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        margin-top: 30px;
+        transition: 300ms ease-in-out;
+
+        &:hover {
+          filter: brightness(80%)
+        }
+      }
+    }
+  }
+}

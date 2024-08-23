@@ -1,0 +1,146 @@
+// Footer Styles
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px 40px 40px;
+  margin-top: 40px;
+
+  hr {
+    max-width: 1170px;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: var(--c-title);
+  }
+
+  &__wrapper {
+    margin-top: 60px;
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: $bp-lg) {
+      flex-direction: column;
+    }
+
+    &-left {
+      max-width: 370px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      @media (max-width: $bp-lg) {
+        max-width: 100%;
+      }
+
+      &-image {
+        max-width: 80px;
+        height: 30px;
+        object-fit: contain;
+      }
+
+      &-description {
+        font-family: var(--ff-secondary);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--c-black);
+      }
+
+      &-socials {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: start;
+
+        a {
+          img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    &-right {
+      flex: 1;
+      display: flex;
+      align-items: start;
+      justify-content: end;
+      gap: 30px;
+
+      @media (max-width: $bp-lg) {
+        justify-content: start;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: $bp-md) {
+        flex-direction: column;
+      }
+
+      &-list {
+        flex: 1;
+        max-width: 170px;
+
+        @media (max-width: $bp-lg) {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        @media (max-width: $bp-md) {
+          flex: auto;
+        }
+
+        &-title {
+          font-family: var(--ff-primary);
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 34px;
+          color: var(--third-gray);
+        }
+
+        &-wrapper {
+          margin-top: 15px;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+              a {
+                font-family: var(--ff-secondary);
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: var(--c-black);
+                transition: var(--t-md) ease-in-out;
+
+                &:hover {
+                  color: var(--third-gray);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 60px;
+    max-width: 1170px;
+    width: 100%;
+    text-align: left;
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--c-black);
+  }
+}
